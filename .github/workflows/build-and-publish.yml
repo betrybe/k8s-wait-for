@@ -2,8 +2,8 @@ name: Build and Deploy
 
 on:
   push:
-    branches:
-      - master
+    # Publish sem ver tags das releases.
+    tags: [ "v*.*.*" ]
 
 env:
   TARGET: linux/arm64,linux/amd64
