@@ -4,8 +4,6 @@ on:
   push:
     # Publish sem ver tags das releases.
     tags: [ "v*.*.*" ]
-    branches:
-    - v1.0.0
 
 env:
   TARGET: linux/arm64,linux/amd64
